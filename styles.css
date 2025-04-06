@@ -1,0 +1,356 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('img/ballee1.jpg'); /* Troque pelo caminho da sua imagem */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    
+
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #f0e6deef;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #ffd700;
+  }
+  
+  .botao-header {
+    background: #ffaa00;
+    color: #f0e3e3;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Hero */
+  .hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .botao {
+    display: inline-block;
+    background: #ffcc00;
+    color: #f3e8e8;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .botao:hover {
+    background: #ffcc00;
+  }
+  
+  /* Sobre 
+  .sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .sobre img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+  }
+  
+  .sobre .texto {
+    flex: 1;
+  }
+  
+  .sobre h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+    .sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .sobre img {
+    max-width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .sobre .texto {
+    flex: 1;
+  }
+
+  */
+
+  /*sobre */
+  .sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .sobre img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #fff;
+    margin-left: 0%;
+  }
+  
+  .sobre .texto {
+    flex: 1;
+    width: 80% ;
+    margin-left: 11%;
+  }
+ 
+  /* Consultas */
+  .consultas h2,
+  .depoimentos h2,
+  .grupo h2,
+  .contato h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #fff3;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card span {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ffd700;
+    color: #f7f3f3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Depoimentos */
+  .depoimentos blockquote {
+    background: rgba(64, 64, 64, 0.662);
+    border-left: 4px solid #ffd700;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 700px;
+    font-style: italic;
+  }
+  
+  /* Grupo VIP */
+  .grupo {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .grupo p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Contato */
+  .contato {
+    text-align: center;
+  }
+  
+  .contato p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #ffd700;
+  }
+  
+  /* Animações Scroll Reveal */
+  .escondido {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+  }
+  
+  .mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .sobre {
+      flex-direction: column;
+      text-align: center;
+    }
+
+  
+    header .container {
+      flex-direction: column;
+      gap: 1rem;
+
+    }
+
+    header .container h1 {
+      font-size: 30px;
+    }
+
+    header .container nav a {
+      margin: 0 1px;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+
+    .maee {
+      height: 120px;
+    }
+
+  }
+
+  @media (max-width: 380px) {
+    .sobre {
+      flex-direction: column;
+      text-align: center;
+    }
+
+  
+    header .container {
+      flex-direction: column;
+      gap: 1rem;
+
+    }
+
+    header .container h1 {
+      font-size: 25px;
+
+    }
+
+    header .container nav a {
+      margin: 0 0px;
+      border-radius: solid 1px black;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+
+    .maee {
+      height: 120px;
+    }
+
+  }
+
+
